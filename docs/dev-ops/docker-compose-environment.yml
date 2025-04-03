@@ -65,7 +65,7 @@ services:
     ports:
       - '5432:5432'
     healthcheck:
-      test: "pg_isready -U postgres -d vector_store"
+      test: "pg_isready -U postgres -d springai"
       interval: 2s
       timeout: 20s
       retries: 10

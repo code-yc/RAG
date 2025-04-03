@@ -6,7 +6,7 @@ spring:
     driver-class-name: org.postgresql.Driver
     username: postgres
     password: postgres
-    url: jdbc:postgresql://localhost:15432/RAG
+    url: jdbc:postgresql://localhost:5432/springai
     type: com.zaxxer.hikari.HikariDataSource
     # hikari连接池配置
     hikari:
@@ -33,12 +33,6 @@ spring:
         options:
           num-batch: 512
         model: nomic-embed-text
-    openai:
-      base-url: https://pro-share-aws-api.zcyai.com/
-      api-key: sk-eEyfxptPgbfXd3Z164260740E0494161Bd8**找小傅哥申请
-      embedding-model: text-embedding-ada-002
-    rag:
-      embed: nomic-embed-text #nomic-embed-text、text-embedding-ada-002
 
 
 # Redis
